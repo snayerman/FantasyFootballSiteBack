@@ -1,0 +1,63 @@
+
+
+"Matchup": {
+
+   "homeTeam": {
+      "teamId": "res.data.boxscore.scheduleItems[0].matchups[0].homeTeamId",
+      "nickName": "res.data.boxscore.scheduleItems[0].matchups[0].homeTeam.teamLocation + res.data.boxscore.scheduleItems[0].matchups[0].homeTeam.teamNickname",
+      "logoUrl": "res.data.boxscore.scheduleItems[0].matchups[0].homeTeam.logoUrl",
+      "score": "res.data.boxscore.scheduleItems[0].matchups[0].homeTeamScores[0]",
+      "currentStarterPoints": "res.data.boxscore.teams[0].appliedActiveRealTotal",
+      "currentBenchPoints": "res.data.boxscore.teams[0].appliedInactiveRealTotal",
+      "players": {
+         "qb": { //res.data.boxscore.teams[0].slots[0]
+            "name": "qb.player.firstName + qb.player.lastName",
+            "playerId": "qb.player.playerId",
+            "score": "qb.currentPeriodRealStats.appliedStatTotal",
+            "percentOwned": "qb.player.percentOwned",
+            "percentStarted": "qb.player.percentStarted",
+            "positionRank": "qb.player.positionRank",
+            "draftRank": "qb.player.draftRank"
+         },
+         "rb1": { ////res.data.boxscore.teams[0].slots[1]
+            "name": "rb.player.firstName + rb.player.lastName",
+            "playerId": "rb.player.playerId",
+            "score": "rb.currentPeriodRealStats.appliedStatTotal",
+            "percentOwned": "rb.player.percentOwned",
+            "percentStarted": "rb.player.percentStarted",
+            "positionRank": "rb.player.positionRank",
+            "draftRank": "rb.player.draftRank"
+         }
+      }
+   },
+
+   "awayTeam": {
+      "teamId": "res.data.boxscore.scheduleItems[0].matchups[0].awayTeamId",
+      "nickName": "res.data.boxscore.scheduleItems[0].matchups[0].awayTeam.teamLocation + res.data.boxscore.scheduleItems[0].matchups[0].awayTeam.teamNickname",
+      "logoUrl": "res.data.boxscore.scheduleItems[0].matchups[0].awayTeam.logoUrl",
+      "score": "res.data.boxscore.scheduleItems[0].matchups[0].awayTeamScores[0]",
+      "currentStarterPoints": "res.data.boxscore.teams[1].appliedActiveRealTotal",
+      "currentBenchPoints": "res.data.boxscore.teams[1].appliedInactiveRealTotal",
+      "players": {
+         "qb": { //res.data.boxscore.teams[1].slots[0]
+            "name": "qb.player.firstName + qb.player.lastName",
+            "playerId": "qb.player.playerId",
+            "score": "qb.currentPeriodRealStats.appliedStatTotal",
+            "percentOwned": "qb.player.percentOwned",
+            "percentStarted": "qb.player.percentStarted",
+            "positionRank": "qb.player.positionRank",
+            "draftRank": "qb.player.draftRank"
+         },
+         "rb1": { ////res.data.boxscore.teams[1].slots[1]
+            "name": "rb.player.firstName + rb.player.lastName",
+            "playerId": "rb.player.playerId",
+            "score": "rb.currentPeriodRealStats.appliedStatTotal",
+            "percentOwned": "rb.player.percentOwned",
+            "percentStarted": "rb.player.percentStarted",
+            "positionRank": "rb.player.positionRank",
+            "draftRank": "rb.player.draftRank"
+         }
+      }
+   }
+
+}
